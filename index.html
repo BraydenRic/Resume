@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brayden Stach - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Download PDF Button -->
+    <button id="download-pdf" class="download-btn" aria-label="Download Resume as PDF">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Download PDF
+    </button>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <div class="container">
+        <header>
+            <h1>Brayden Stach</h1>
+            <div class="contact-info">
+                <span><i class="fas fa-map-marker-alt"></i> Medford, Oregon</span>
+                <span>•</span>
+                <a href="tel:5416135350"><i class="fas fa-phone"></i> (541) 613-5350</a>
+                <span>•</span>
+                <a href="mailto:braystach@gmail.com" id="email-link" class="email-copy"><i class="fas fa-envelope"></i> braystach@gmail.com</a>
+            </div>
+            <div id="copy-notification" class="copy-notification">Copied to clipboard!</div>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/braydenstach/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <span>•</span>
+                <a href="https://github.com/BraydenRic" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </header>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="section-content">
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3>Southern Oregon University</h3>
+                        <span class="location">Ashland, OR</span>
+                    </div>
+                    <div class="entry-details">
+                        <span class="degree">Bachelor of Science in Computer Science</span>
+                        <span class="date">Expected Graduation: June 2026</span>
+                    </div>
+                    <p class="gpa">GPA: 3.98</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <div class="section-content">
+                <div class="skill-category">
+                    <strong>Languages:</strong>
+                    <span>Python, C++, Java, SQL, PowerShell, VBA, JavaScript, HTML/CSS</span>
+                </div>
+                <div class="skill-category">
+                    <strong>Technologies:</strong>
+                    <span>Git, Linux, Active Directory, Microsoft Office Suite, GIS Software, Network Security Tools, Node</span>
+                </div>
+                <div class="skill-category">
+                    <strong>Certifications:</strong>
+                    <span>Google Cybersecurity, Google ACE Cloud</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2>Professional Experience</h2>
+            <div class="section-content">
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3>Orion Aerospace and Defense Systems</h3>
+                        <span class="location">Medford, OR</span>
+                    </div>
+                    <div class="entry-details">
+                        <span class="position">IT Intern</span>
+                        <span class="date">June 2025 - September 2025</span>
+                    </div>
+                    <ul>
+                        <li>Developed Python, PowerShell, and VBA automation scripts to streamline IT operations and improve workflow efficiency</li>
+                        <li>Configured and deployed servers and workstations, including terminating hundreds of CAT cables for network infrastructure</li>
+                        <li>Utilized log management systems to monitor, organize, and secure internal networks against potential threats</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3>Southern Oregon University</h3>
+                        <span class="location">Ashland, OR</span>
+                    </div>
+                    <div class="entry-details">
+                        <span class="position">Computer Science Tutor</span>
+                        <span class="date">October 2024 - Present</span>
+                    </div>
+                    <ul>
+                        <li>Mentored students in Python, C++, and Java, improving understanding of core programming concepts and data structures</li>
+                        <li>Created personalized study plans and guided students to develop solutions independently, fostering critical thinking skills</li>
+                        <li>Fostered critical thinking and problem-solving skills by guiding students to develop solutions independently</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="section-content">
+                <div class="project">
+                    <h3>Fitness Tracking Mobile App</h3>
+                    <span class="tech-stack">Flutter, Dart</span>
+                    <ul>
+                        <li>Built cross-platform mobile application using Flutter for workout logging and progress tracking</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Twitch-to-YouTube Automation Pipeline</h3>
+                    <span class="tech-stack">Node.js, JavaScript</span>
+                    <ul>
+                        <li>Developed automated content pipeline using Twitch and YouTube APIs to streamline clip uploads and publishing</li>
+                        <li>Implemented GitHub Action to run program at 9am everyday</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Oakhill Estates Website</h3>
+                    <span class="tech-stack">HTML, CSS, JavaScript</span>
+                    <ul>
+                        <li>Designed and deployed responsive website for mobile home park with property listings and contact forms</li>
+                        <li>Optimized SEO and integrated Google Business Profile to improve local search visibility and customer engagement</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="interests">
+            <h2>Additional Skills & Interests</h2>
+            <div class="section-content">
+                <p><strong>Areas of Interest:</strong> Cybersecurity, Cloud Computing, Network Security, Machine Learning, Data Science, Web Development, Sports Analytics, Information Technology</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections and entries
+        document.querySelectorAll('section, .entry, .project').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+
+        // Back to top button functionality
+        const backToTopBtn = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Click to copy email functionality
+        const emailLink = document.getElementById('email-link');
+        const copyNotification = document.getElementById('copy-notification');
+
+        emailLink.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            const email = 'braystach@gmail.com';
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(email).then(() => {
+                // Show notification
+                copyNotification.classList.add('show');
+
+                // Hide notification after 2 seconds
+                setTimeout(() => {
+                    copyNotification.classList.remove('show');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy email:', err);
+            });
+        });
+
+        // Download PDF functionality
+        document.getElementById('download-pdf').addEventListener('click', function() {
+            const button = this;
+            const originalText = button.innerHTML;
+
+            // Show loading state
+            button.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spinner"><circle cx="12" cy="12" r="10"></circle></svg>Generating...';
+            button.disabled = true;
+
+            // Hide the back to top button temporarily
+            const backToTopBtn = document.getElementById('back-to-top');
+            backToTopBtn.style.display = 'none';
+
+            const element = document.querySelector('.container');
+            const opt = {
+                margin: [0.5, 0.5, 0.5, 0.5],
+                filename: 'Brayden_Stach_Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: {
+                    scale: 2,
+                    useCORS: true,
+                    letterRendering: true,
+                    scrollY: 0,
+                    scrollX: 0,
+                    windowWidth: document.documentElement.scrollWidth,
+                    windowHeight: document.documentElement.scrollHeight
+                },
+                jsPDF: {
+                    unit: 'in',
+                    format: 'letter',
+                    orientation: 'portrait'
+                },
+                pagebreak: {
+                    mode: ['avoid-all', 'css', 'legacy'],
+                    before: '.section',
+                    after: '.section',
+                    avoid: ['.entry', '.project', 'ul', 'h2', '.entry-header']
+                }
+            };
+
+            html2pdf().set(opt).from(element).save().then(() => {
+                // Reset button
+                button.innerHTML = originalText;
+                button.disabled = false;
+                backToTopBtn.style.display = '';
+            }).catch(() => {
+                button.innerHTML = originalText;
+                button.disabled = false;
+                backToTopBtn.style.display = '';
+                alert('Error generating PDF. Please try again.');
+            });
+        });
+    </script>
+</body>
+</html>
