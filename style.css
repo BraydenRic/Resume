@@ -238,21 +238,10 @@ h2 {
 /* Entry Styles (Education & Experience) */
 .entry {
     margin-bottom: 2rem;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    background: var(--bg-color);
-    transition: all 0.3s ease;
 }
 
 .entry:last-child {
     margin-bottom: 0;
-}
-
-.entry:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border-color: var(--secondary-color);
 }
 
 .entry-header {
@@ -331,21 +320,10 @@ li {
 /* Projects Section */
 .project {
     margin-bottom: 2rem;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    background: var(--bg-color);
-    transition: all 0.3s ease;
 }
 
 .project:last-child {
     margin-bottom: 0;
-}
-
-.project:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border-color: var(--secondary-color);
 }
 
 .project h3 {
@@ -488,16 +466,6 @@ li {
     section {
         padding: 1.5rem 1rem;
     }
-
-    .entry,
-    .project {
-        padding: 1rem;
-    }
-
-    .entry:hover,
-    .project:hover {
-        transform: translateY(-2px);
-    }
 }
 
 /* Print Styles */
@@ -536,18 +504,12 @@ li {
         page-break-inside: avoid;
         page-break-before: auto;
         page-break-after: auto;
-        transform: none !important;
-        box-shadow: none !important;
-        border: 1px solid var(--border-color) !important;
     }
 
     .project {
         page-break-inside: avoid;
         page-break-before: auto;
         page-break-after: auto;
-        transform: none !important;
-        box-shadow: none !important;
-        border: 1px solid var(--border-color) !important;
     }
 
     h2 {
